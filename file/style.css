@@ -1,0 +1,454 @@
+/* Header css */
+
+
+#head {
+    background-color: #e1e4eb;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bor {
+    border-bottom: 1px solid;
+}
+
+.foody {
+    font-size: 2.5rem;
+    /* Adjusted for better responsiveness */
+    font-weight: bold;
+    color: #2eff2ed6;
+}
+
+.icon3 {
+    border-radius: 100%;
+    padding: 4px 6px;
+    background-color: white;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.icon3 i {
+    font-size: 1.25rem;
+    /* Ensures icons are visible */
+}
+
+.icon3:hover {
+    background-color: #f8f9fa;
+    /* Light background on hover */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    /* Adds shadow for better focus */
+}
+
+/* Media queries for additional responsiveness */
+@media (max-width: 768px) {
+    .icon {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-toggler {
+        margin-left: auto;
+    }
+}
+
+
+/* inro section */
+
+#intro {
+    background-color: #e1e4eb;
+}
+
+.btngreen {
+    color: #ffffff;
+    background-color: #2eff2ed6;
+}
+
+.btnorange {
+    color: #ffffff;
+    background-color: #ff2424d9;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+}
+
+
+/* organic */
+
+#bestorganic {
+    padding: 0;
+    /* Optional: Add padding or margins if needed */
+}
+
+#bestorganic .img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+#bestorganic .d-flex {
+    margin: 0 auto;
+}
+
+#bestorganic h1 {
+    font-size: 2.5rem;
+}
+
+#bestorganic p {
+    font-size: 1rem;
+}
+
+#bestorganic .ul {
+    list-style: none;
+    padding: 0;
+}
+
+#bestorganic .ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+#bestorganic .btn.btngreen {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+}
+
+@media (max-width: 767px) {
+    #bestorganic h1 {
+        font-size: 2rem;
+    }
+
+    #bestorganic p {
+        font-size: 0.875rem;
+    }
+}
+
+
+/* ourfeatures */
+
+
+#ourfeatures {
+    background-image: url("../picture/bg-icon.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+    /* Adds padding on top and bottom */
+}
+
+.card {
+    border: none;
+    border-radius: 0.5rem;
+    /* Optional: adds border radius for a rounded effect */
+}
+
+.card img {
+    /* max-width: 100px; */
+    /* Adjust as needed */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+.card-body {
+    text-align: center;
+}
+
+
+
+
+
+
+/* our priducts starts  */
+
+/* #ourproducts {
+    background-color: #fefefe;
+}
+
+.imggg-outer {
+    overflow: hidden;
+}
+
+.imggg {
+    transition: all 1s ease;
+}
+
+.imggg:hover {
+    transform: scale(1.1);
+}
+
+
+ul {
+    list-style: none;
+}
+
+.cardone {
+    box-shadow: 0 0 8px 1px #41414140;
+} */
+
+#ourproducts {
+    background-color: #fefefe;
+}
+
+.imggg-outer {
+    overflow: hidden;
+    position: relative;
+}
+
+.imgcard {
+    transition: all 1s ease;
+}
+
+.imggg-outer:hover .imgcard {
+    transform: scale(1.1);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cardone {
+    box-shadow: 0 0 8px 1px #41414140;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.cardone:hover {
+    box-shadow: 0 0 12px 2px #41414160;
+}
+
+
+
+
+
+
+
+
+
+/* visit */
+
+#visit {
+    background-image: url("../picture/bg-icon.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* height: 100vh; */
+}
+
+.hpa {
+    background-color: #3cb815;
+}
+
+.hpa a {
+    background-color: #f65005;
+}
+
+.ikcard {
+    background-color: white;
+    box-shadow: 0 0 8px 1px #41414140;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* latestblog */
+
+.bloggg {
+    box-shadow: 0 0 8px 1px #41414140;
+    transition: transform 0.3s ease;
+}
+
+.bloggg:hover {
+    transform: scale(1.05);
+}
+
+.imggg-outer {
+    overflow: hidden;
+}
+
+.imggg {
+    transition: transform 0.3s ease;
+}
+
+.imggg-outer img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-body p {
+    margin-bottom: 0;
+}
+
+@media (max-width: 576px) {
+    .card-body {
+        padding: 1rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* foodyends */
+
+#foody {
+    background-color: #111111;
+}
+
+.spanicon {
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.spanicon:hover {
+    background-color: #333333;
+}
+
+.endul {
+    list-style: none;
+    padding: 0;
+}
+
+.endul a {
+    text-decoration: none;
+}
+
+.abc {
+    color: grey;
+    transition: all .5s ease;
+}
+
+.abc:hover {
+    color: white;
+    transform: scale(1.1);
+}
+
+.spanbor {
+    border: 1px solid white;
+    padding: 5px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.spanbor input {
+    border: none;
+    background-color: #111111;
+    color: white;
+    padding: 5px;
+    flex: 1;
+}
+
+.spanbor button {
+    padding: 5px;
+    border: none;
+    color: white;
+    background-color: #45e713bf;
+}
+
+/* Media queries for additional responsiveness */
+@media (max-width: 768px) {
+    .spanbor {
+        flex-direction: column;
+    }
+
+    .spanbor input {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .spanbor button {
+        width: 100%;
+    }
+}
+
+
+/* last */
+
+#last {
+    background-color: #111111;
+    border-top: 1px solid white;
+    padding: 20px;
+}
+
+#last .text-secondary {
+    color: #6c757d;
+    /* Adjusted for better readability */
+}
+
+#last .text-white {
+    color: #ffffff;
+}
+
+#last .d-flex {
+    display: flex;
+    align-items: center;
+}
+
+#last p {
+    margin: 0;
+}
+
+#last .me-2 {
+    margin-right: 0.5rem;
+    /* Adjusts the space between the icon and text */
+}
+
+#last .ms-2 {
+    margin-left: 0.5rem;
+    /* Adjusts the space between text elements */
+}
+
+@media (max-width: 768px) {
+    #last .d-flex {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    #last .d-flex.justify-content-end {
+        justify-content: start;
+    }
+}
